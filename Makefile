@@ -24,7 +24,8 @@ CJS_BUNDLE = $(BUILDDIR)/index.js
 ES_MODULES = $(patsubst lib/%.js, build-es/%.js,  $(JS_SRC))
 
 
-all: clean lint build test
+#all: clean lint build test
+all: clean build
 
 test:
 	npm test
